@@ -109,12 +109,24 @@ public class Main {
         } else {
             Scanner removeScanner = new Scanner(System.in);
             int index = removeScanner.nextInt();
-//            for (int j = 0; j < figures.size(); j++) {
-//                if (j == index) {
-//                    if(figures[j] )
-//                    figures.set(j, )
-//                }
-//            }
+            for (int j = 0; j < figures.size(); j++) {
+                if (j == index) {
+                    if (figures.get(j) instanceof Triangle) {
+                        figures.add(getTriangleSides());
+                    }
+                    if (figures.get(j) instanceof Square) {
+                        figures.add(getSquareSides());
+                    }
+                    if (figures.get(j) instanceof Rectangle) {
+                        figures.add(getRectangleSides());
+                    }
+                    if (figures.get(j) instanceof Circle) {
+                        figures.add(getCircleSides());
+                    }
+                }
+            }
+            figures.remove(index);
+            printAllFigures();
         }
     }
 
