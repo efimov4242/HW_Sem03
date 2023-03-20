@@ -86,6 +86,8 @@ public class Main {
             } else if (menuNum == 6) {
                 changeFigure();
             } else if (menuNum == 7) {
+                getSortFigure();
+            } else if (menuNum == 7) {
                 System.out.println("Программа завершена!");
                 System.exit(0);
             }
@@ -93,6 +95,10 @@ public class Main {
             System.out.println("Введите цифру, соответствующую необходимому критерию:");
             menuNum = iScanner.nextInt();
         }
+    }
+
+    public static void getSortFigure() {
+
     }
 
     public static void changeFigure() {
@@ -103,12 +109,12 @@ public class Main {
         } else {
             Scanner removeScanner = new Scanner(System.in);
             int index = removeScanner.nextInt();
-            for (int j = 0; j < figures.size(); j++) {
-                if (j == index) {
-
-                    figures.
-                }
-            }
+//            for (int j = 0; j < figures.size(); j++) {
+//                if (j == index) {
+//                    if(figures[j] )
+//                    figures.set(j, )
+//                }
+//            }
         }
     }
 
