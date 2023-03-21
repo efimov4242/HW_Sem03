@@ -130,7 +130,10 @@ public class Main {
         }
     }
 
-    public static void getAllFigurePerimetre() {
+
+
+
+        public static void getAllFigurePerimetre() {
         for (Figure figure : figures) {
             if(figure instanceof Polygon) {
                 ((Polygon) figure).perimetre();
@@ -226,6 +229,4 @@ public class Main {
                 figureNum = iScanner.nextInt();
             }
         }
-
-
     }
